@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saurabh Kumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Saurabh</div>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <img src="saurabh.jpg" alt="Saurabh Profile" class="profile-img" />
+      <h1>Hi, I'm <span>Saurabh Kumar</span></h1>
+      <p>Software Engineer | Java, Web Dev, WordPress</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about" class="section" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>
+      I'm currently pursuing MCA from LNCT University. I have experience building web and desktop applications using Java, MySQL, HTML, CSS, and JavaScript. I also worked as a freelance WordPress developer and content writer.
+    </p>
+  </section>
+
+  <section id="projects" class="section" data-aos="fade-left">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Airlines Management System</h3>
+      <p>Developed a desktop app to manage flight bookings and schedules using Java, JDBC, and MySQL.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section" data-aos="zoom-in">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Java</li>
+      <li>C</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>SQL</li>
+      <li>MySQL</li>
+      <li>WordPress</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Saurabh Kumar | <a href="mailto:rsvk9123@gmail.com">rsvk9123@gmail.com</a> | 
+    <a href="https://www.linkedin.com/in/saurabh-kumar-b9680b32a/">LinkedIn</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once: true });</script>
+</body>
+</html>
